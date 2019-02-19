@@ -6,6 +6,8 @@ Build docker base image:
     docker build -t deb-builder:18.04 -f Dockerfile-ubuntu-18.04 .
     docker build -t deb-builder:17.04 -f Dockerfile-ubuntu-17.04 .
 
+Use build:
+
     usage: build [options...] SOURCEDIR
     Options:
         -i IMAGE  Name of the docker image (including tag) to use as package build environment.
@@ -22,6 +24,5 @@ Build docker base image:
     hello_2.10-1_amd64.changes
     hello_2.10-1_amd64.deb
     hello-dbgsym_2.10-1_amd64.ddeb
-
 
 
